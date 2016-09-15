@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10sp" 
+    android:paddingRight="10sp"
+    android:background="@android:color/transparent" >
+    
+    <TextView	android:layout_height="50dp"
+                android:layout_width="wrap_content" 
+                android:id="@+id/tvGroup"
+                android:text="CSE"
+                android:typeface="serif" 
+                android:textSize="25sp" 
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:padding="5dp">   
+        
+    </TextView>
+
+    <Button
+        android:id="@+id/btnRename"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="48dp"
+        android:text="Rename"
+        android:textColor="#ffffff"
+        android:background="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:text="X"
+        android:background="@android:color/black"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

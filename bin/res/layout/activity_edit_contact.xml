@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ec_background"
+    tools:context=".RenameGroup" >
+
+     <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:ems="10"
+        android:hint="Contact Name"
+        android:background="@drawable/et_background"
+        android:minHeight="50dp"
+        android:minWidth="280dp" >
+
+        <requestFocus />
+    </EditText>
+
+     <Button
+         android:id="@+id/smsbutton"
+         android:layout_width="135dp"
+         android:layout_height="50dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="460dp"
+         android:background="@drawable/edit" />
+
+     <EditText
+         android:id="@+id/editText2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editText1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="25dp"
+         android:ems="10"
+         android:inputType="phone"
+         android:hint="Contact Number(10digits)"
+        android:background="@drawable/et_background"
+        android:minHeight="50dp"
+        android:minWidth="280dp" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/editText1"
+         android:layout_alignLeft="@+id/editText1"
+         android:layout_marginBottom="77dp"
+         android:text="Please enter below the contact name/number(or both) whichever you wish to change"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="#000000"
+         android:typeface="sans" />
+
+     <EditText
+         android:id="@+id/editText3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editText2"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="25dp"
+         android:ems="10"
+         android:inputType="textEmailAddress"
+         android:hint="Contact Email ID"
+        android:background="@drawable/et_background"
+        android:minHeight="50dp"
+        android:minWidth="280dp" />
+
+</RelativeLayout>

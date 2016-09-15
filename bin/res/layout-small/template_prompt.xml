@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:background="@android:color/white">
+    
+    <!-- Spinner Dropdown -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_title"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:minWidth="150dp"
+    />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dip" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:orientation="vertical" >
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/et_prompt"
+        android:ems="10"
+        android:minWidth="260dp"
+        android:minHeight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_prompt"
+        android:ems="10"
+        android:minWidth="260dp"
+        android:minHeight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_prompt"
+        android:ems="10"
+        android:minWidth="260dp"
+        android:minHeight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_prompt"
+        android:ems="10"
+        android:minWidth="260dp"
+        android:minHeight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_prompt"
+        android:ems="10"
+        android:minWidth="260dp"
+        android:minHeight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_prompt"
+        android:ems="10"
+        android:minWidth="260dp"
+        android:minHeight="20dp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/savetemplate"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Save as Template"
+        android:visibility="gone"
+        android:background="@android:color/black"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility = "gone"
+        android:layout_marginTop="5dp"
+        android:textSize="8sp"
+        android:hint="INSTRUCTION: Enter your template with every variable field which you would like to edit like subject, time or date inside semicolons.
+e.g. Class test of Subject has been scheduled on date at time.
+To again view this instruction, you can click on question mark in the previous screen." />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" >
+
+        <Button
+            android:id="@+id/smsbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/s"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/emailbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/e"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/instruction"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/mark"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

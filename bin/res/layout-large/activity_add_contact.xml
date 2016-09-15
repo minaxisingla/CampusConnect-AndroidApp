@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ac_background"
+    tools:context=".AddGroup" >
+
+     <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:hint="Enter Contact Name"
+        android:background="@drawable/et_background"
+        android:minHeight="70dp"
+        android:minWidth="400dp" 
+        android:textSize="28sp">
+
+        <requestFocus />
+    </EditText>
+    
+     <EditText
+         android:id="@+id/editText2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/editText1"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_marginTop="140dp"
+         android:ems="10"
+         android:inputType="phone"
+         android:hint="Enter Contact Number(10digits)"
+        android:background="@drawable/et_background"
+        android:minHeight="70dp"
+        android:minWidth="400dp"
+        android:textSize="28sp" />
+
+     <Button
+         android:id="@+id/smsbutton"
+         android:layout_width="200dp"
+         android:layout_height="70dp"
+         android:layout_marginLeft="95dp"
+         android:layout_marginTop="690dp"
+         android:background="@drawable/add" 
+         android:layout_centerHorizontal="true"/>
+
+     <EditText
+         android:id="@+id/editText3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/editText1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="280dp"
+         android:ems="10"
+         android:inputType="textEmailAddress"
+         android:hint="Enter Email Address"
+         android:background="@drawable/et_background"
+        android:minHeight="70dp"
+        android:minWidth="400dp"
+        android:textSize="28sp" />
+
+</RelativeLayout>

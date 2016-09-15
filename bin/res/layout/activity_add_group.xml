@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a_background"
+    tools:context=".AddGroup" >
+
+     <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:ems="10"
+        android:hint="Enter Group Name"
+        android:background="@drawable/et_background"
+        android:minHeight="50dp"
+        android:minWidth="280dp" >
+
+        <requestFocus />
+    </EditText>
+
+     <Button
+         android:id="@+id/smsbutton"
+         android:layout_width="130dp"
+         android:layout_height="50dp"
+         android:layout_marginLeft="100dp"
+         android:layout_marginTop="400dp"
+         android:background="@drawable/create" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itm.grouper.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent" >
+    
+     <CheckBox
+              android:id="@+id/CheckBox"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:focusable="false"
+              android:clickable="false"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="0dp"
+              android:layout_marginTop="5dp"
+              android:layout_centerInParent="true"
+              android:button="@drawable/customcheckbox"
+            />
+    
+    <TextView	android:layout_height="40dp"
+                android:layout_width="wrap_content" 
+                android:id="@+id/tvContact"
+                android:text="CONTACT"
+                android:typeface="serif" 
+                android:textSize="15sp" 
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:paddingLeft="5dp"
+                android:gravity="top" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="70dp"
+        android:text="Edit"
+        android:textColor="#ffffff"
+        android:background="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        android:text="X"
+        android:textColor="#ffffff"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvContact"
+        android:text="Mobile"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        android:padding="5dp"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContact"
+        android:padding="5dp"
+        android:text="Email"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginTop="-5dp" />
+
+</com.itm.grouper.CheckableRelativeLayout>
